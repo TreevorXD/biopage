@@ -43,22 +43,18 @@
 
 "use client"
 
-import React from "react"
-
-import DevPopup from "@/components/dev-popup"
 import {
   BriefcaseIcon,
   DiscordIcon,
   EmailIcon,
   GitHubIcon,
-  PatreonIcon,
   VerificationBadgeIcon,
   YouTubeIcon,
 } from "@/components/social-icons"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, Moon, Play, Settings, Sun } from "lucide-react"
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 
 /*
  * Extended Social Media Icons Import
@@ -111,37 +107,31 @@ interface BlogPost {
 const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/nayandas69",
+    url: "https://github.com/TreevorXD",
     icon: GitHubIcon,
     bgColor: "bg-gray-800",
   },
   {
-    name: "Patreon",
-    url: "https://patreon.com/NayanDas69",
-    icon: PatreonIcon,
-    bgColor: "bg-orange-500",
-  },
-  {
     name: "YouTube",
-    url: "https://youtube.com/@dasnayan69",
+    url: "https://www.youtube.com/@VE7OOV",
     icon: YouTubeIcon,
     bgColor: "bg-red-600",
   },
   {
     name: "Discord",
-    url: "https://discord.gg/u9XfHZN8K9",
+    url: "https://discord.gg/",
     icon: DiscordIcon,
     bgColor: "bg-indigo-600",
   },
   {
     name: "Website",
-    url: "https://blogverse-five-omega.vercel.app",
+    url: "https://www.ve7oov.ca",
     icon: BriefcaseIcon,
     bgColor: "bg-emerald-600",
   },
   {
     name: "Email",
-    url: "mailto:nayanchandradas@hotmail.com",
+    url: "mailto:trevormilan@proton.me",
     icon: EmailIcon,
     bgColor: "bg-blue-600",
   },
@@ -398,7 +388,7 @@ export default function HomePage() {
     const fetchBlogs = async () => {
       try {
         setIsLoadingBlogs(true)
-        const response = await fetch("https://blogverse-five-omega.vercel.app/api/v1/posts/recent?limit=5", {
+        const response = await fetch("https://example.com/api/v1/posts/recent?limit=5", {
           headers: {
             Accept: "application/json",
           },
@@ -601,7 +591,7 @@ export default function HomePage() {
             >
               <Image
                 src="/images/profile.jpg"
-                alt="Nayan Das Profile Picture"
+                alt="Trevor Milan Profile Picture"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="rounded-full border-4 border-white/30 object-cover"
@@ -623,7 +613,7 @@ export default function HomePage() {
               transition={{ delay: 0.3, duration: 0.5 }}
             >
               <span className="flex items-center justify-center gap-2">
-                Nayan Das
+                Trevor Milan
                 <div className="group relative">
                   <VerificationBadgeIcon
                     size={20}
@@ -651,7 +641,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              Crafting Code & Content for a Connected World
+              Electronics, Tech, and Code Enthusiast.
             </motion.p>
           </motion.div>
 
@@ -897,9 +887,6 @@ export default function HomePage() {
           </motion.div>
         </motion.div>
       </div>
-
-      {/* DevPopup Component */}
-      <DevPopup isDarkMode={isDarkMode} />
     </div>
   )
 }

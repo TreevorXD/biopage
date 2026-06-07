@@ -11,12 +11,12 @@
  * but please keep the author attribution intact.
  */
 
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, Poppins } from "next/font/google"
-import "./globals.css"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import type { Metadata } from "next"
+import { Inter, Poppins } from "next/font/google"
+import type React from "react"
+import "./globals.css"
 
 // Font configurations with optimization
 const inter = Inter({
@@ -34,12 +34,12 @@ const poppins = Poppins({
 
 // SEO metadata configuration
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linkinbio-nextjs-ashen.vercel.app"),
-  title: "Link in Bio | Nayan Das - Portfolio & Social Links",
+  metadataBase: new URL("https://www.ve7oov.ca"),
+  title: "Trevor Milan Portfolio & Social Links",
   description:
     "Crafting Code & Content for a Connected World. Explore my portfolio, latest blog posts, and connect with me across social platforms.",
   keywords: [
-    "Nayan Das",
+    "Trevor Milan",
     "portfolio",
     "web developer",
     "app developer",
@@ -49,24 +49,24 @@ export const metadata: Metadata = {
     "blog",
     "programming",
   ],
-  authors: [{ name: "Nayan Das", url: "https://github.com/nayandas69" }],
-  creator: "Nayan Das",
-  publisher: "Nayan Das",
+  authors: [{ name: "Trevor Milan", url: "https://github.com/nayandas69" }],
+  creator: "Trevor Milan",
+  publisher: "Trevor Milan",
 
   // Open Graph metadata for social media sharing
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://linkinbio-nextjs-ashen.vercel.app",
-    title: "Link in Bio | Nayan Das",
-    description: "Crafting Code & Content for a Connected World",
-    siteName: "Nayan Das Portfolio",
+    url: "https://www.ve7oov.ca",
+    title: "Link in Bio | Trevor Milan",
+    description: "Electronics, Tech, and Code Enthusiast.",
+    siteName: "Trevor Milan Portfolio",
     images: [
       {
         url: "/images/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Nayan Das Profile",
+        alt: "Trevor Milan Profile",
       },
     ],
   },
@@ -74,10 +74,10 @@ export const metadata: Metadata = {
   // Twitter/X Card metadata
   twitter: {
     card: "summary_large_image",
-    title: "Link in Bio | Nayan Das",
-    description: "Crafting Code & Content for a Connected World",
+    title: "Link in Bio | Trevor Milan",
+    description: "Electronics, Tech, and Code Enthusiast.",
     images: ["/images/profile.jpg"],
-    creator: "@nayandas69",
+    creator: "@trevor.milan",
   },
 
   // Additional metadata
@@ -104,7 +104,7 @@ export const metadata: Metadata = {
   // },
 
   // App-specific metadata
-  applicationName: "Nayan Das Portfolio",
+  applicationName: "Trevor Milan Portfolio",
   category: "Portfolio",
 }
 
@@ -157,7 +157,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: "Nayan Das",
+              name: "Trevor Milan",
               url: "https://github.com/nayandas69/linkinbio-nextjs.git",
               sameAs: [
                 "https://github.com/nayandas69",
@@ -166,7 +166,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://discord.gg/u9XfHZN8K9",
               ],
               jobTitle: "Web Developer & Content Creator",
-              description: "Crafting Code & Content for a Connected World",
+              description: "Electronics, Tech, and Code Enthusiast.",
               image: "/images/profile.jpg",
             }),
           }}
